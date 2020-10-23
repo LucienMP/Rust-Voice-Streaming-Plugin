@@ -33,6 +33,7 @@ The above projects are dependent on Opus 1.3.1, and Steam SDK 2020 place them in
 
 Packet Format for Audio streaming from a Steam SDK API is as follows:
 
+```
  0000 uint32 : 57 5c 35 00  : HEADER ID
  0004 uint32 : 01 00 10 01  : FLAGS?
  
@@ -61,6 +62,7 @@ Payload Types are as below, there are others but you wont see them as of 2020 St
  nPayLoadType=0x0b
 	uint16   :                  : Sample Rate in HZ, usually 240000Hz as of 2020.
 
+```
 
 
 # Steam Audio Packet Format (Visualization)
