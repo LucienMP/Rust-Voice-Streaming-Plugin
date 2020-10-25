@@ -2,14 +2,14 @@
 # Project Contents
 This project is comprised of multiple projects
 
-1. SteamVocalsCpp ; this project uses Steam SDK to grab audio from the mic and print the encoded packets.
-   I used this to work out if the packets differed from those found in the Facepunch Rust game
+1. SteamVocalsCpp ; this project uses Steam SDK to grab audio from the mic and print the encoded packets.  
+   I used this to work out if the packets differed from those found in the Facepunch Rust game  
    
-2. RustServer\rustserver\oxide\plugins\VoiceStreaming.cs ; this project generates an NPC, and either plays a fixed "test" utterance, or streams from the web server
-     Commands are:
-		/stream identify - identifies an object you are looking at
-		/stream npc 	 - creates npc, and streams the "test" utterance
-		/stream web 	 - once you make the NPC, this command will stream from the web server the WAV file
+2. RustServer\rustserver\oxide\plugins\VoiceStreaming.cs ; this project generates an NPC, and either plays a fixed "test" utterance, or streams from the web server  
+     Commands are:  
+		/stream identify - identifies an object you are looking at  
+		/stream npc 	 - creates npc, and streams the "test" utterance  
+		/stream web 	 - once you make the NPC, this command will stream from the web server the WAV file  
 
 3. VoiceStreamServer ; This project UUEncodes and transmits a binary packet of audio, you could just use your own webserver for this with various plugins
 

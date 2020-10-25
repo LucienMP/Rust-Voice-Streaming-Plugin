@@ -9,14 +9,27 @@ echo RSIZE:%RSIZE%
 
 REM This is to allow you to give yourself items / noclip / etc in client console
 REM OWNERID should be followed by your SteamID64 id.
-echo SERVER CONSOLE TYPE:  ownerid 76561197963762775
+REM Use: https://steamid.io/ to lookup your profile to SteamID64
+REM
+echo SERVER CONSOLE TYPE:  ownerid 70000000000000000
 
 :start
 REM Download steamcmd.exe client from https://developer.valvesoftware.com/wiki/SteamCMD#Windows and upzip to this folder
 
 echo ==============================================================
 echo STEAM UPDATE; checking for an update...
+
+REM Download/Update Release Rust Server
 steamcmd.exe +login anonymous +force_install_dir .\rustserver\ +app_update 258550 +quit
+
+REM Download/Update Staging Branch Rust Server
+REM steamcmd.exe +login anonymous +force_install_dir .\rustserver\ +app_update 258550 -beta staging +quit
+
+echo ==============================================================
+echo Overlay Oxide; ... 
+
+REM Not automated, please download from https://umod.org/games/rust
+
 
 echo ==============================================================
 echo START RUST SERVER
